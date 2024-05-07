@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/NehM89hy)
 # Augmenting Paths
 
 When we talked about the Ford-Fulkerson algorithm to find the maximum flow
@@ -32,3 +33,8 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The augmentingPath function has a worse case of $\Theta( V + E )$ because the function might have to visit every node and every edge in the graph. If there are a lot of nodes or edges this could take a while. $V$ is the number of nodes and $E$ is the number of edges. So if the graph is big and has a lot of nodes and edges the function could take longer to run. The function needs to keep track of which nodes it has visited and the path it has taken too so if there are a lot of nodes it will need more memory to store the paths. 
+Source:
+https://stackoverflow.com/questions/58662066/cannot-get-all-routes-from-a-to-e-in-a-directed-graph
+
